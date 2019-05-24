@@ -1,5 +1,7 @@
 QT       += widgets
 
+CONFIG += app
+
 CONFIG(app) {
     warning(App config)
 
@@ -19,9 +21,6 @@ CONFIG(app) {
                     qribbonsection.cpp \
                     qribbonbutton.cpp \
                     qribbontest.cpp
-
-    INCLUDEPATH += "C:\Program Files (x86)\Visual Leak Detector\include"
-    LIBS += -L"C:\Program Files (x86)\Visual Leak Detector\lib\win32" -lvld
 
     TARGET = qribbontest
 
